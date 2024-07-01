@@ -1,5 +1,6 @@
-Gesior2012
-==========
+In order to use the landing page with an gesior AAC, follow commit `aaecfb9bea64b2e0da75ce19f02288e92109de4f`.
 
-Gesior 2012 - Account Maker [website] for OTSes
-Select 'branch' for your OTS (TFS) version.
+Url:
+```
+localhost/api/infos.php
+
