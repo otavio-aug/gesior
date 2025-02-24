@@ -6,10 +6,10 @@
     header("Access-Control-Allow-Headers: Content-Type, Authorization");
     require_once("../config/config.php");
 
-    $servername = $config['database']['host'];
-    $username = $config['database']['databaseUser'];
-    $password = $config['database']['databasePass'];
-    $dbname = $config['database']['database'];
+    $servername = $config['api']['host'];
+    $username =   $config['api']['databaseUser'];
+    $password =   $config['api']['databasePass'];
+    $dbname =     $config['api']['database'];
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 

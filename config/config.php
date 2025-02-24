@@ -37,6 +37,35 @@ $config['pagSeguro']['database'] = 'testdb';	## DATABASE
 $config['pagSeguro']['databaseUser'] = 'root';	## USER
 $config['pagSeguro']['databasePass'] = '';		## PASSWORD
 
+$config['api']['host'] = 'localhost';		## YOUR HOST
+$config['api']['database'] = 'rayleigh';	## DATABASE
+$config['api']['databaseUser'] = 'root';	## USER
+$config['api']['databasePass'] = '';		## PASSWORD
+
+$config['MercadoPago']['token'] = '';		## api token
+$config['MercadoPago']['promotions'] = [
+    [
+        'min_value' => 0,
+        'max_value' => 199,
+        'multiplier' => 1.1,  //10% a mais
+    ],
+    [
+        'min_value' => 200,
+        'max_value' => 499,
+        'multiplier' => 1.2,  //20% a mais
+    ],
+    [
+        'min_value' => 500,
+        'max_value' => 999,
+        'multiplier' => 1.5,  // 50% a mais
+    ],
+    [
+        'min_value' => 1000,
+        'max_value' => null,  // Sem limite superior
+        'multiplier' => 2,    //100% a mais
+    ]
+];
+
 # Create Account Options
 $config['site']['one_email'] = true;
 $config['site']['create_account_verify_mail'] = false;
